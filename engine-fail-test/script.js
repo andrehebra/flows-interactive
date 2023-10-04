@@ -1,5 +1,11 @@
+let current = 0;
 const image = document.getElementById("diagram");
 
 function changeImage(file) {
-    image.src = file + ".png";
+
+    if (file == current + 1) {
+        image.src = file + ".png";
+        current++;
+    }
+    
 }
